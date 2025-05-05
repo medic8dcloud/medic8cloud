@@ -2,3 +2,5 @@
 __pycache__/
 /scripts/spotify/.env
 /scripts/reddit/.env
+# Ignore virtual environment folder
+venv/
