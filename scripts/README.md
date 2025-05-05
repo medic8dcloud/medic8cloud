@@ -1,5 +1,15 @@
 # medic8dcloud - Scripts Directory
+ __  __          _      _           _     _                
+|  \/  | ___  __| | ___| |__   ___ | |__ (_)_ __ ___  ___ 
+| |\/| |/ _ \/ _` |/ _ \ '_ \ / _ \| '_ \| | '__/ _ \/ __|
+| |  | |  __/ (_| |  __/ | | | (_) | | | | | | |  __/\__ \
+|_|  |_|\___|\__,_|\___|_| |_|\___/|_| |_|_|_|  \___||___/
+                 ⛓ medic8d.cloud ⛓
+      looping nightmares | dopamine withdrawals
 
+
+
+      
 This directory organizes all automation and bot logic into modular folders by platform.
 
 ---
