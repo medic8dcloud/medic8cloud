@@ -1,2 +1,4 @@
 .env
 __pycache__/
+/scripts/spotify/.env
+/scripts/reddit/.env
