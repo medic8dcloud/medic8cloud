@@ -24,30 +24,6 @@ ocd-coded. adhd-executed. ptsd-themed. no refunds.
 - 🎭 branding assets and surreal visuals
 - ☠️ things i probably shouldn't be hosting
 
-## 🎧 how to use the spotify script
-
-1. **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2. **Create a `.env` file**
-    Copy `.env.example` → `.env` and add your Spotify API keys:
-    ```env
-    SPOTIFY_CLIENT_ID=your_client_id
-    SPOTIFY_CLIENT_SECRET=your_client_secret
-    ```
-
-3. **Run the script**
-    Pull playlists by username:
-    ```bash
-    python spotify_pull.py your_spotify_username
-    ```
-
-    If no username is given, it defaults to `spotify`.
-
----
-
 ## contact
 📩 medic8dcloud@gmail.com  
 🌐 [medic8d.cloud](https://medic8d.cloud)  
