@@ -1,65 +1,65 @@
-# medic8dcloud - Scripts Directory
- __  __          _      _           _     _                
-|  \/  | ___  __| | ___| |__   ___ | |__ (_)_ __ ___  ___ 
-| |\/| |/ _ \/ _` |/ _ \ '_ \ / _ \| '_ \| | '__/ _ \/ __|
-| |  | |  __/ (_| |  __/ | | | (_) | | | | | | |  __/\__ \
-|_|  |_|\___|\__,_|\___|_| |_|\___/|_| |_|_|_|  \___||___/
-                 ⛓ medic8d.cloud ⛓
-      looping nightmares | dopamine withdrawals
+
+    __  __          _      _           _     _                
+   |  \/  | ___  __| | ___| |__   ___ | |__ (_)_ __ ___  ___  
+   | |\/| |/ _ \/ _` |/ _ \ '_ \ / _ \| '_ \| | '__/ _ \/ __| 
+   | |  | |  __/ (_| |  __/ | | | (_) | | | | | | |  __/\__ \ 
+   |_|  |_|\___|\__,_|\___|_| |_|\___/|_| |_|_|_|  \___||___/ 
+                   ⛓ medic8d.cloud ⛓
+         looping nightmares | dopamine withdrawals
 
 
+## medic8dcloud Scripts
 
-      
-This directory organizes all automation and bot logic into modular folders by platform.
-
----
-
-## Structure
-
-```
-scripts/
-├── discord/
-│   ├── create_channel.py    # One-time server setup (channels, roles)
-│   ├── social_bot.py        # Ongoing bot commands (e.g. !socials)
-│   ├── requirements.txt     # Python deps for discord bot
-│   └── README.md            # Discord-specific usage
-│
-├── reddit/
-│   └── ...                  # Reddit automation logic
-│
-├── spotify/
-│   └── ...                  # Spotify metadata + scraping
-```
+This directory contains all bot and automation scripts for the **medic8d.cloud** project.
 
 ---
 
-## Usage Notes
+### 📁 discord/
 
-- Each folder is **self-contained** and should include:
-  - its own `README.md` with usage
-  - `requirements.txt` (if Python)
-  - `.env.example` with required secrets
-- All `.env` files are **gitignored**
+Scripts for managing the Discord server (channel setup, bot commands, etc.)
 
-To set up a folder:
+- `create_channel.py`: Auto-creates text and voice channels under a defined category.
+- `social_bot.py`: Listens for chat commands (e.g. `!socials`) and posts brand links.
+- `requirements.txt`: Dependencies for all Discord-related functionality.
+- `README.md`: This file. Explains layout and usage.
 
+**To run:**
 ```bash
 cd scripts/discord
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env  # then edit with actual credentials
-python create_channel.py  # or python social_bot.py
+python social_bot.py  # or create_channel.py once for setup
 ```
 
 ---
 
-## Dev Notes
+### 📁 reddit/
 
-- Discord scripts use `discord.py` with command/event handlers
-- GitHub repo should stay modular: don’t mix platform logic
-- Use symlinks or wrappers at root level if needed
+Reddit OAuth + automation tools.
+
+- `reddit_auth.py`: Handles access token retrieval.
+- `reddit_auth_test.py`: Verifies Reddit OAuth is working.
+- `requirements.txt`: For Reddit automation tools.
 
 ---
 
-medic8d.cloud 💊 | looping nightmares | dopamine withdrawals
+### 📁 spotify/
+
+Spotify Web API access for pulling saved tracks.
+
+- `spotify_pull.py`: Example script to pull and dump saved tracks.
+- `requirements.txt`: Spotipy + dotenv.
+
+---
+
+### 📦 Environment Setup
+
+Each subfolder has its own `.env.example` file. Copy it to `.env` and fill in credentials.
+
+```bash
+cp .env.example .env
+# then edit with your values
+```
+
+---
+
+looping nightmares. dopamine withdrawals. medic8d.cloud
