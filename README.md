@@ -1,4 +1,5 @@
 # medic8d.cloud
+![Status](https://img.shields.io/badge/status-hopelessly%20medicated-91288e?style=flat-square)
 
 hopelessly medicated. looping nightmares and dopamine withdrawals.  
 audio hallucinations available on all platforms. 💊 medic8d.cloud
