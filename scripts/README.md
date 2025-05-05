@@ -1,65 +1,56 @@
+# medic8d.cloud scripts
 
-    __  __          _      _           _     _                
-   |  \/  | ___  __| | ___| |__   ___ | |__ (_)_ __ ___  ___  
-   | |\/| |/ _ \/ _` |/ _ \ '_ \ / _ \| '_ \| | '__/ _ \/ __| 
-   | |  | |  __/ (_| |  __/ | | | (_) | | | | | | |  __/\__ \ 
-   |_|  |_|\___|\__,_|\___|_| |_|\___/|_| |_|_|_|  \___||___/ 
-                   ⛓ medic8d.cloud ⛓
-         looping nightmares | dopamine withdrawals
+```txt
+     __  __          _      _           _     _               
+    |  \/  | ___  __| | ___| |__   ___ | |__ (_)_ __ ___  ___
+    | |\/| |/ _ \/ _` |/ _ \ '_ \ / _ \| '_ \| | '__/ _ \/ __|
+    | |  | |  __/ (_| |  __/ | | | (_) | | | | | | |  __/\__ \
+    |_|  |_|\___|\__,_|\___|_| |_|\___/|_| |_|_|_|  \___||___/
+                     ⛓ medic8d.cloud ⛓
+          looping nightmares | dopamine withdrawals
+```
 
+![Status](https://img.shields.io/badge/status-hopelessly%20medicated-91288e?style=flat-square)
 
-## medic8dcloud Scripts
+## scripts overview
 
-This directory contains all bot and automation scripts for the **medic8d.cloud** project.
+hopelessly medicated bots, scrapers, and chaos scripts. compartmentalized into folders:
 
----
+* `discord/` — medic8dcloud server automation + bot commands
+* `reddit/` — oauth, bot posting, and data scraping
+* `spotify/` — listener + pull stats, api experiments
 
-### 📁 discord/
+## layout
 
-Scripts for managing the Discord server (channel setup, bot commands, etc.)
+Each folder has:
 
-- `create_channel.py`: Auto-creates text and voice channels under a defined category.
-- `social_bot.py`: Listens for chat commands (e.g. `!socials`) and posts brand links.
-- `requirements.txt`: Dependencies for all Discord-related functionality.
-- `README.md`: This file. Explains layout and usage.
+* `README.md` — individual doc for each service
+* `requirements.txt` — install dependencies for just that module
+* `.env.example` — expected secrets or keys
 
-**To run:**
+## setup
+
 ```bash
-cd scripts/discord
+cd scripts/<folder>
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-python social_bot.py  # or create_channel.py once for setup
 ```
 
----
-
-### 📁 reddit/
-
-Reddit OAuth + automation tools.
-
-- `reddit_auth.py`: Handles access token retrieval.
-- `reddit_auth_test.py`: Verifies Reddit OAuth is working.
-- `requirements.txt`: For Reddit automation tools.
-
----
-
-### 📁 spotify/
-
-Spotify Web API access for pulling saved tracks.
-
-- `spotify_pull.py`: Example script to pull and dump saved tracks.
-- `requirements.txt`: Spotipy + dotenv.
-
----
-
-### 📦 Environment Setup
-
-Each subfolder has its own `.env.example` file. Copy it to `.env` and fill in credentials.
+## run a bot
 
 ```bash
-cp .env.example .env
-# then edit with your values
+python3 <scriptname>.py
 ```
 
 ---
 
-looping nightmares. dopamine withdrawals. medic8d.cloud
+## contact
+
+📩 [medic8dcloud@gmail.com](mailto:medic8dcloud@gmail.com)
+🌐 [medic8d.cloud](https://medic8d.cloud)
+📀 soundcloud / ig / fb / tiktok @medic8dcloud
+
+## license
+
+wtf is a license. do crime.
